@@ -317,3 +317,31 @@ $(function() {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const filters = document.querySelectorAll(".project-filters li");
+    const items = document.querySelectorAll(".project-item");
+
+    filters.forEach(filter => {
+        filter.addEventListener("click", function () {
+            
+            // Remove active class from all
+            filters.forEach(f => f.classList.remove("filter-active"));
+            this.classList.add("filter-active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            items.forEach(item => {
+                if (filterValue === "*") {
+                    item.style.display = "block";
+                } else {
+                    if (item.classList.contains(filterValue.substring(1))) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                }
+            });
+        });
+    });
+});
+

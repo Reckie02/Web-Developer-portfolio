@@ -398,6 +398,8 @@
 		</div>
 	</section>
 
+
+
 	<section class="ftco-section" id="services-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -491,22 +493,6 @@
 		</div>
 	</section>
 
-	<section class="ftco-hireme">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-md-8 col-lg-8 d-flex align-items-center">
-					<div class="w-100 py-4">
-						<h2>Have a project on your mind.</h2>
-						<p>reach out and let's bring it to life</p>
-						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-4 d-flex align-items-end">
-					<img src="images/ideas.png" class="img-fluid" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="ftco-section ftco-project" id="projects-section">
 		<div class="container-fluid px-md-4">
@@ -517,7 +503,74 @@
 					<p>A Quick visualization of my strengths and areas of expertise</p>
 				</div>
 			</div>
+
 			<div class="row">
+				<div class="col-lg-3 filter-sidebar">
+					<div class="sidebar-box ftco-animate">
+						<div class="categories">
+							<ul class="project-filters">
+								<li data-filter="*" class="filter-active">ALL</li>
+								<li data-filter=".html-css">HTML / CSS</li>
+								<li data-filter=".javascript">JavaScript</li>
+								<li data-filter=".wordpress">Content Management</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div class="row gy-4 projects" data-aos="fade-up" data-aos-delay="150">
+
+                    <!--------------------------html/css------------------------------->	
+
+					<div class="col-md-6 project-item html-css">
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image: url(images/da-portfolio.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3><a href="https://reckie02.github.io/Data-Analyst-Portfolio/">Data Analyst Portfolio Website</a></h3>
+								<span>html/css</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 project-item html-css">
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/agric-site.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3><a href="https://reckie02.github.io/Agric-Exports.github.io/index.html">Grocery Store Website</a></h3>
+								<span>html/css</span>
+							</div>
+						</div>
+					</div>
+
+					<!--------------------------javascript------------------------------->
+					<div class="col-md-6 project-item javascript">
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image: url(images/graphics.png);">
+							<div class="overlay" data-aos='fade-up'></div>
+							<div class="text text-center p-4">
+								<h3><a href="">Graphic Design</a></h3>
+								<span>html/css</span>
+							</div>
+						</div>
+					</div>
+
+					<!---------------------------Content Management------------------------------->
+					<div class="col-md-6 col-lg-4 project-item wordpress">
+						<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" 
+						style="background-image: url(images/frapam.png);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3><a href="https://frapamtravels.com/">Frapam Travels</a></h3>
+								<span>Wordpress</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <div class="row">
 				<div class="col-md-3">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/agric-site.png);">
 						<div class="overlay"></div>
@@ -589,6 +642,23 @@
 							<span>Marketing</span>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div> -->
+	</section>
+
+	<section class="ftco-hireme">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-8 col-lg-8 d-flex align-items-center">
+					<div class="w-100 py-4">
+						<h2>Have a project on your mind.</h2>
+						<p>reach out and let's bring it to life</p>
+						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 d-flex align-items-end">
+					<img src="images/ideas.png" class="img-fluid" alt="">
 				</div>
 			</div>
 		</div>
@@ -924,7 +994,8 @@
 		<script src="js/scrollax.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 		<script src="js/google-map.js"></script>
-		
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> 
+
 		<script src="js/main.js"></script>
 		<? php include 'index.php'; ?>
 	</body>
