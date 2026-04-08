@@ -8971,9 +8971,6 @@ h1, h2, h3, h4, h5,
   border-radius: 5px;
   overflow: hidden; 
 }
-.filter-sidebar{
-  height:100vh;
-}
 
 .project-filters{
   text-align: left;
